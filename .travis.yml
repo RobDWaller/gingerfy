@@ -6,6 +6,9 @@ python:
     - "3.4"
     - "3.6"
 
+install:
+    - sudo apt-get install -y pylint
+
 script:
     - python -m unittest discover tests/
     - pylint ./gingerfy/
