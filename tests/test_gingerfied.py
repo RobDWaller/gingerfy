@@ -1,5 +1,5 @@
 import unittest
-from gingerfy import Gingerfied
+from gingerfy.gingerfied import Gingerfied
 
 class TestGingerfied(unittest.TestCase):
 
@@ -17,7 +17,7 @@ class TestGingerfied(unittest.TestCase):
 
         gingerfied = Gingerfied("Fixed String", "Broken String", fixes)
 
-        self.assertEqual(gingerfied.getFix(), "Fixed String")
+        self.assertEqual(gingerfied.get_fix(), "Fixed String")
 
     def test_get_broken(self):
 
@@ -25,7 +25,7 @@ class TestGingerfied(unittest.TestCase):
 
         gingerfied = Gingerfied("Fixed String", "Broken String", fixes)
 
-        self.assertEqual(gingerfied.getBroken(), "Broken String")
+        self.assertEqual(gingerfied.get_broken(), "Broken String")
 
     def test_get_fixes(self):
 
@@ -33,5 +33,5 @@ class TestGingerfied(unittest.TestCase):
 
         gingerfied = Gingerfied("Fixed String", "Broken String", fixes)
 
-        self.assertEqual(gingerfied.getFixes()[0], "colours")
-        self.assertEqual(gingerfied.getFixes()[1], "fixed")
+        self.assertEqual(gingerfied.get_fixes()[0], "colours")
+        self.assertEqual(gingerfied.get_fixes()[1], "fixed")

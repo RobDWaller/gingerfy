@@ -1,3 +1,1 @@
-from gingerfy.gingerfy import Gingerfy
-from gingerfy.gingerfied import Gingerfied
-from gingerfy.unginger import colours
+"""A module to gingerfy unginger strings and sentences."""
