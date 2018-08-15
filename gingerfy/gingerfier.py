@@ -6,10 +6,10 @@ from gingerfy.gingerfied import Gingerfied
 from gingerfy.unginger import COLOURS
 
 class Gingerfier(object):
-    """Class String"""
+    """Gingerfier class"""
 
     def fix(self, string):
-        """Method String"""
+        """Fix the broken string / sentence and return a Gingerfied object."""
 
         broken = string
 
@@ -21,7 +21,10 @@ class Gingerfier(object):
 
     @classmethod
     def cleanse_string(cls, string):
-        """Method String"""
+        """
+        Remove all unginger colours from string and replace them with
+        ginger.
+        """
 
         for colour in COLOURS:
             string = string.replace(colour, "ginger")

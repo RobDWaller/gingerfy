@@ -1,28 +1,31 @@
 """
-Generated object for gingerfy defines new fixed string, old unginger string and
-the fixes that have been made.
+Generated object for gingerfy module defines new fixed string, old unginger
+string and the fixes that have been made.
 """
 class Gingerfied(object):
-    """Class String"""
+    """Gingerfied class"""
 
     def __init__(self, fix, broken, fixes):
-        """Method String"""
+        """
+        Constructor: consumes and sets fixed sentence, the old broken sentence
+        and an array of the fixes.
+        """
 
         self.fix = fix
         self.broken = broken
         self.fixes = fixes
 
     def get_fix(self):
-        """Method String"""
+        """Get the fixed sentence"""
 
         return self.fix
 
     def get_broken(self):
-        """Method String"""
+        """Get the original broken sentence"""
 
         return self.broken
 
     def get_fixes(self):
-        """Method String"""
+        """Get the array of fixes made"""
 
         return self.fixes
