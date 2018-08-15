@@ -8,7 +8,14 @@ python:
 
 install:
     - sudo apt-get install -y pylint
+    - sudo apt-get install -y python-pip
+    - pip install coverage
+    - pip install codecov
 
 script:
     - python -m unittest discover tests/
     - pylint ./gingerfy/
+    - coverage run --source gingerfy/ -m unittest discover tests/
+
+after_success:
+    - codecov
