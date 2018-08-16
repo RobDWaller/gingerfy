@@ -15,12 +15,12 @@ print(result.get_fix())
 
 > **Output:** Ginger haired people are the best!
 
-# Notes
+## Notes
 
 This project is obviously a joke, I come from a long line of Scottish and Irish gingers, so it's very much meant to be self-deprecating.
 
 It was created to help me learn the basics of Python and how to pipeline Python code.
 
-# Author
+## Author
 
 [RobDWaller](https://twitter.com/RobDWaller)
