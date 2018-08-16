@@ -8,18 +8,16 @@ python:
     - "3.7"
 
 install:
-    - sudo apt-get install -y pylint3
-    - sudo apt-get install -y python3-pip
+    - sudo apt-get install -y pylint
+    - sudo apt-get install -y python-pip
     - pip install coverage
     - pip install codecov
     - pip install mypy
 
 script:
-    - python -V
-    - python3 -V
-    - python3 -m unittest discover tests/
-    - python3 -m mypy ./gingerfy/
-    - pylint3 ./gingerfy/
+    - python -m unittest discover tests/
+    - python -m mypy ./gingerfy/
+    - pylint ./gingerfy/
     - coverage run --source gingerfy/ -m unittest discover tests/
 
 after_success:
