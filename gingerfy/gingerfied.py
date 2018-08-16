@@ -17,17 +17,17 @@ class Gingerfied():
         self.broken = broken
         self.fixes = fixes
 
-    def get_fix(self)-> str:
+    def get_fix(self) -> str:
         """Get the fixed sentence"""
 
         return self.fix
 
-    def get_broken(self)-> str:
+    def get_broken(self) -> str:
         """Get the original broken sentence"""
 
         return self.broken
 
-    def get_fixes(self)-> List[str]:
+    def get_fixes(self) -> List[str]:
         """Get the array of fixes made"""
 
         return self.fixes
