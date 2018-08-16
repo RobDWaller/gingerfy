@@ -2,13 +2,14 @@
 Takes a string, looks for unginger colours and cleanses them with the one true
 colour, Ginger!
 """
+from typing import List
 from gingerfy.gingerfied import Gingerfied
 from gingerfy.unginger import COLOURS
 
-class Gingerfier(object):
+class Gingerfier():
     """Gingerfier class"""
 
-    def fix(self, string):
+    def fix(self, string: str) -> Gingerfied:
         """Fix the broken string / sentence and return a Gingerfied object."""
 
         broken = string
@@ -20,7 +21,7 @@ class Gingerfier(object):
         return Gingerfied(fix, broken, fixes)
 
     @classmethod
-    def cleanse_string(cls, string):
+    def cleanse_string(cls, string: str) -> str:
         """
         Remove all unginger colours from string and replace them with
         ginger.
@@ -32,9 +33,9 @@ class Gingerfier(object):
         return string.capitalize()
 
     @classmethod
-    def create_fixes_list(cls, string):
+    def create_fixes_list(cls, string: str) -> List[str]:
         """
-        Create an array of unginger colours that appear in the string
+        Create an array / list of unginger colours that appear in the string
         """
 
         fixes = []

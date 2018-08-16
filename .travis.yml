@@ -3,18 +3,21 @@ dist: xenial
 language: python
 
 python:
+    - "3.5"
     - "3.6"
     - "3.7"
 
 install:
-    - sudo apt-get install -y pylint
     - sudo apt-get install -y python-pip
+    - pip install pylint
     - pip install coverage
     - pip install codecov
+    - pip install mypy
 
 script:
     - python -m unittest discover tests/
-    - pylint ./gingerfy/
+    - python -m mypy ./gingerfy/
+    - python -m pylint ./gingerfy/
     - coverage run --source gingerfy/ -m unittest discover tests/
 
 after_success:
