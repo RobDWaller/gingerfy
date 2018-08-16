@@ -48,7 +48,7 @@ class TestGingerfy(unittest.TestCase):
 
         result = gingerfy.fix("Black and gray haired people are the best!")
 
-        self.assertEquals(len(result.get_fixes()), 2)
+        self.assertEqual(len(result.get_fixes()), 2)
         self.assertTrue("Black" in result.get_fixes())
         self.assertTrue("gray" in result.get_fixes())
 
