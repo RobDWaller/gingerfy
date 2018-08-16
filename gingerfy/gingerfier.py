@@ -13,9 +13,9 @@ class Gingerfier(object):
 
         broken = string
 
-        fix = self.cleanse_string(string)
+        fixes = self.create_fixes_list(string)
 
-        fixes = ["Blonde"]
+        fix = self.cleanse_string(string)
 
         return Gingerfied(fix, broken, fixes)
 
@@ -30,3 +30,17 @@ class Gingerfier(object):
             string = string.replace(colour, "ginger")
 
         return string.capitalize()
+
+    @classmethod
+    def create_fixes_list(cls, string):
+        """
+        Create an array of unginger colours that appear in the string
+        """
+
+        fixes = []
+
+        for colour in COLOURS:
+            if string.find(colour) != -1:
+                fixes.append(colour)
+
+        return fixes
