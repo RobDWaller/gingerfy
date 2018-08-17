@@ -1,8 +1,8 @@
 import unittest
-from gingerfy.gingerfier import Gingerfier
-from gingerfy.gingerfied import Gingerfied
+from src.gingerfier import Gingerfier
+from src.gingerfied import Gingerfied
 
-class TestGingerfy(unittest.TestCase):
+class TestGingerfier(unittest.TestCase):
 
     def test_gingerfy(self):
 

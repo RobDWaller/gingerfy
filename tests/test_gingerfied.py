@@ -1,5 +1,5 @@
 import unittest
-from gingerfy.gingerfied import Gingerfied
+from src.gingerfied import Gingerfied
 
 class TestGingerfied(unittest.TestCase):
 

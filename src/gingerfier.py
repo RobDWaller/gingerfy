@@ -3,10 +3,10 @@ Takes a string, looks for unginger colours and cleanses them with the one true
 colour, Ginger!
 """
 from typing import List
-from gingerfy.gingerfied import Gingerfied
-from gingerfy.unginger import COLOURS
+from .gingerfied import Gingerfied
+from .unginger import COLOURS
 
-class Gingerfier():
+class Gingerfier:
     """Gingerfier class"""
 
     def fix(self, string: str) -> Gingerfied:
