@@ -4,11 +4,9 @@
 Remove unginger colours from strings and replace them with the one true colour, GINGER!!
 
 ```python
-from gingerfy.gingerfier import Gingerfier
+import gingerfy
 
-gingerfier = Gingerfier()
-
-result = gingerfier.fix("Blonde haired people are the best!")
+result = gingerfy.fix("Blonde haired people are the best!")
 
 print(result.get_fix())
 ```
