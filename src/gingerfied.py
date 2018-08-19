@@ -4,7 +4,7 @@ string and the fixes that have been made.
 """
 from typing import List
 
-class Gingerfied():
+class Gingerfied:
     """Gingerfied class"""
 
     def __init__(self, fix: str, broken: str, fixes: List[str]) -> None:
