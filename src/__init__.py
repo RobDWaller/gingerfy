@@ -1,1 +1,1 @@
-"""A module to gingerfy unginger strings and sentences."""
+"""The main gingerfy package"""

@@ -1,3 +1,6 @@
+"""
+Interface for the gingerfy package. Exposes one interface method fix. 
+"""
 from .src.gingerfier import Gingerfier
 from .src.gingerfied import Gingerfied
 
