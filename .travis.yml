@@ -16,9 +16,9 @@ install:
 
 script:
     - python -m unittest discover tests/
-    - python -m mypy src/
-    - python -m pylint src/
-    - coverage run --source src/ -m unittest discover tests/
+    - python -m mypy gingerfy/
+    - python -m pylint gingerfy/
+    - coverage run --source gingerfy/ -m unittest discover tests/
 
 after_success:
     - codecov
